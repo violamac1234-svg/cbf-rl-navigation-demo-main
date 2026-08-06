@@ -2,9 +2,20 @@
 
 This repository contains a demonstration of combining Reinforcement Learning (RL) with Control Barrier Functions (CBF) for robot navigation, using `rsl_rl` and IsaacGym-like vectorized environments. 
 
+## 2-DOF Arm Migration
+
+The repository also contains a Windows-tested low-order CBF-RL implementation for a planar two-link arm.
+See the Chinese [run guide](./arm2d/RUN_GUIDE.md) for environment setup, smoke tests, four-method
+training, checkpoint layout, and Fig.3/Fig.4 plotting commands. The mathematical model and source-code
+mapping are documented in [LOW_ORDER_MODEL.md](./arm2d/LOW_ORDER_MODEL.md).
+
 ## Installation
 
 The project uses Conda to manage its dependencies. First, ensure you have Conda installed on your system.
+The `environment.yml` file is the original Linux environment snapshot for the navigation project. It contains
+Linux-specific build identifiers and is not the Windows environment used by the Arm2D migration. For Arm2D on
+native Windows, follow [arm2d/RUN_GUIDE.md](./arm2d/RUN_GUIDE.md) instead of the command below.
+
 Create and activate the conda environment by running:
 ```bash
 conda env create -f environment.yml

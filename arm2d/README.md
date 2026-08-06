@@ -1,5 +1,8 @@
 # 二自由度机械臂 CBF 迁移原型
 
+第一次拿到源码时，请先阅读 [RUN_GUIDE.md](./RUN_GUIDE.md)，其中包含 Windows 环境安装、
+代码自检、四配置训练、checkpoint 管理以及 Fig.3/Fig.4 绘图命令。
+
 当前低阶训练版本的完整模型、约束、奖励、参数和源码对应关系见
 [LOW_ORDER_MODEL.md](./LOW_ORDER_MODEL.md)。
 
